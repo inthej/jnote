@@ -11,13 +11,7 @@ const Content = (props) => {
   return (
     <Container className={className}>
       <div className="paper" style={{ minHeight: '438.312px' }}>
-        <div className="note" contentEditable={true}>
-          text
-          <br />
-          text
-          <br />
-          <br />
-        </div>
+        <div className="note" contentEditable={true} spellCheck={false}></div>
       </div>
     </Container>
   )

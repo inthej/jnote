@@ -21,4 +21,5 @@
   vertical-align: text-top; /* 텍스트를 줄의 상단에 정렬 */
   white-space: pre-wrap; /* 내용 줄 바꿈 유지 */
   padding: 0.8em 1em; /* 배경선의 높이와 전체 줄 높이를 동일하게 하기 위해 상단과 하단의 내부 여백을 조정합니다 */
+  outline: none; /* 선택시 파란색 아웃라인 제거 */
 }
