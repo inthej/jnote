@@ -7,16 +7,37 @@
   display: flex;
   align-items: center;
   justify-content: left;
+  gap: 10px; /* 버튼 간의 공간 추가 */
+}
+
+.btn-group button {
+  padding: 10px;
+  border-radius: 5px; /* 버튼 모서리 둥글게 */
+  border: 1px solid #dcdcdc; /* 버튼 테두리 */
+  background-color: #f5f5dc; /* 버튼 배경색 */
+  font-family: Arial, sans-serif; /* 폰트 설정 */
+  cursor: pointer; /* 마우스 커서 변경 */
+}
+
+.btn-group button:hover {
+  background-color: #e8e8c4; /* 버튼 호버 배경색 */
 }
 
 .search {
   width: 100%;
   height: 35px;
+  border-radius: 5px; /* 입력창 모서리 둥글게 */
+  border: 1px solid #dcdcdc; /* 입력창 테두리 */
+  margin-top: 10px; /* 입력창 상단 마진 */
 }
 
 .stack {
   overflow-y: scroll;
-  max-height: 90vh; /* 화면 높이의 90% */
+  max-height: 85vh; /* 화면 높이의 90% */
+  padding: 0;
+  margin-top: 10px; /* 스택 상단 마진 */
+  border: 1px solid #dcdcdc; /* 스택 테두리 */
+  border-radius: 5px; /* 스택 모서리 둥글게 */
   @media screen and (max-width: 768px) {
     max-height: 150px;
   }
@@ -40,6 +61,8 @@
   list-style: none;
   border-bottom: 1px solid #ddd;
   transition: background-color 0.2s ease; /* 배경색의 부드러운 전환 효과 */
+  display: flex;
+  justify-content: space-between;
 }
 
 .stack .row:last-child {
@@ -53,4 +76,20 @@
 .stack .row.selected {
   background-color: #f0f0f0;
   font-weight: bold;
+}
+
+.trash {
+  background-color: #ff9999;
+  color: #ffffff; /* 흰색 텍스트 */
+  border: none; /* 테두리 없음 */
+  text-align: center; /* 텍스트를 중앙으로 정렬 */
+  text-decoration: none; /* 텍스트 밑줄 없음 */
+  display: inline-block;
+  font-size: 14px; /* 글자 크기를 작게 설정 */
+  cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+  transition: background-color 0.3s; /* 배경색 변경 애니메이션 */
+}
+
+.trash:hover {
+  background-color: #ff3333; /* 마우스를 올렸을 때 좀 더 진한 빨간색 배경 */
 }
