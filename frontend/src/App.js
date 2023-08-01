@@ -23,7 +23,7 @@ function App() {
     <React.Fragment>
       <GlobalStyle />
       <Helmet>
-        <title>JNote 웹노트</title>
+        <title>JNote - 웹노트</title>
         <meta name="description" content="편리한 웹노트"></meta>
       </Helmet>
       <Routes>

@@ -9,6 +9,7 @@ const Container = styled.div`
   border: 1px solid #dcdcdc; // Light gray border
   border-radius: 10px; // Rounded borders
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); // Shadow for 3D effect
+  margin: 5px; /* 외부 여백 */
 `
 
 const Side = (props) => {
