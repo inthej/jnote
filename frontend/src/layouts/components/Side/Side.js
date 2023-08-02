@@ -18,7 +18,7 @@ const Side = (props) => {
     <Container className={className}>
       <div className="nav">
         <div className="btn-group">
-          <button>글쓰기</button>
+          <button>새글</button>
           <button>메일</button>
           <button>검색</button>
           <button className="action-trash">휴지통</button>
@@ -28,95 +28,95 @@ const Side = (props) => {
         </form>
         <ul className="stack">
           <li className="row selected">
-            <span className="title">Title21</span>
+            <span className="title">제목21</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title20</span>
+            <span className="title">제목20</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title19</span>
+            <span className="title">제목19</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title18</span>
+            <span className="title">제목18</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title17</span>
+            <span className="title">제목17</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title16</span>
+            <span className="title">제목16</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title15</span>
+            <span className="title">제목15</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title14</span>
+            <span className="title">제목14</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title13</span>
+            <span className="title">제목13</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title12</span>
+            <span className="title">제목12</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title11</span>
+            <span className="title">제목11</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title10</span>
+            <span className="title">제목10</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title9</span>
+            <span className="title">제목9</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title8</span>
+            <span className="title">제목8</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title7</span>
+            <span className="title">제목7</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title6</span>
+            <span className="title">제목6</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title5</span>
+            <span className="title">제목5</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title4</span>
+            <span className="title">제목4</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title3</span>
+            <span className="title">제목3</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title4</span>
+            <span className="title">제목4</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title3</span>
+            <span className="title">제목3</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title2</span>
+            <span className="title">제목2</span>
             <button className="trash">X</button>
           </li>
           <li className="row">
-            <span className="title">Title1</span>
+            <span className="title">제목1</span>
             <button className="trash">X</button>
           </li>
         </ul>
