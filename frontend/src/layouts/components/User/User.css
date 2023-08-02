@@ -22,6 +22,10 @@
   }
 }
 
+#or {
+  font-size: small;
+}
+
 #register, #login {
   cursor: pointer; /* 마우스 커서 변경 */
 }

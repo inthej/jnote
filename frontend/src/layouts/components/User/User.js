@@ -17,7 +17,7 @@ const User = (props) => {
     login: 5,
   })
 
-  const [registerText, setRegisterText] = useState('I am a new user')
+  const [registerText, setRegisterText] = useState('회원가입 할래요')
 
   const handleRegister = () => {
     setOrder({
@@ -28,7 +28,7 @@ const User = (props) => {
       login: 5,
     })
 
-    setRegisterText('Register')
+    setRegisterText('회원가입')
   }
 
   return (
@@ -38,7 +38,7 @@ const User = (props) => {
           {registerText}
         </button>
         <div id="or" style={{ order: order.or }}>
-          or
+          또는
         </div>
         <input id="email" type="email" placeholder="Email" style={{ order: order.email }} />
         <input
@@ -48,7 +48,7 @@ const User = (props) => {
           style={{ order: order.password }}
         />
         <button id="login" style={{ order: order.login }}>
-          Login
+          로그인
         </button>
       </div>
     </Container>
