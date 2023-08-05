@@ -1,6 +1,5 @@
 .paper {
   background:
-
     linear-gradient(rgba(128, 128, 128, 0.2) 1px, transparent 1px) 0 0 repeat-y, /* 회색 수평선 */
     linear-gradient(90deg, rgba(255, 0, 0, 0.5) 1px, transparent 1px) 1em 0 repeat-y, /* 빨간색 수직선 */
     #ffffff; /* 종이 색상 흰색 */

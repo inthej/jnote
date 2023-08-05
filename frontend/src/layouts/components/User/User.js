@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import './User.css'
 
 const Container = styled.div`
   flex: 0 0 20%;
@@ -8,12 +8,54 @@ const Container = styled.div`
   margin: 5px; /* 외부 여백 */
 `
 
+const AccountWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000; /* 검정색 텍스트 */
+`
+
+const SmallText = styled.div`
+  font-size: small;
+`
+
+// 회원가입 및 로그인 버튼
+const ActionButton = styled.button`
+  height: 50px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 80%;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`
+
+// 이메일과 패스워드 입력 필드
+const InputField = styled.input`
+  height: 50px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 80%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`
+
 const User = (props) => {
+  const { className } = props
   const [order, setOrder] = useState({
-    email: 3,
-    password: 4,
     register: 1,
     or: 2,
+    email: 3,
+    password: 4,
     login: 5,
   })
 
@@ -32,27 +74,24 @@ const User = (props) => {
   }
 
   return (
-    <Container>
-      <div className="account">
-        <button id="register" style={{ order: order.register }} onClick={handleRegister}>
+    <Container className={className}>
+      <AccountWrapper>
+        <ActionButton id="register" style={{ order: order.register }} onClick={handleRegister}>
           {registerText}
-        </button>
-        <div id="or" style={{ order: order.or }}>
-          또는
-        </div>
-        <input id="email" type="email" placeholder="Email" style={{ order: order.email }} />
-        <input
-          id="password"
-          type="password"
-          placeholder="Password"
-          style={{ order: order.password }}
-        />
-        <button id="login" style={{ order: order.login }}>
+        </ActionButton>
+        <SmallText styled={{ order: order.or }}>또는</SmallText>
+        <InputField id="email" type="email" placeholder="Email" style={{ order: order.email }} />
+        <InputField id="password" type="password" placeholder="Password" style={{ order: order.password }} />
+        <ActionButton id="login" style={{ order: order.login }}>
           로그인
-        </button>
-      </div>
+        </ActionButton>
+      </AccountWrapper>
     </Container>
   )
+}
+
+User.propTypes = {
+  className: PropTypes.string,
 }
 
 export default User

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import Side from '../components/Side'
@@ -20,9 +21,13 @@ const MainLayout = (props) => {
     <Container>
       <Side className="side" />
       <Content className="content">{children}</Content>
-      <User className="user">Right</User>
+      <User className="user" />
     </Container>
   )
+}
+
+MainLayout.propTypes = {
+  children: PropTypes.node,
 }
 
 export default MainLayout

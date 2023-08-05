@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 
 const LayoutWithComponent = (props) => {
@@ -7,6 +8,11 @@ const LayoutWithComponent = (props) => {
       <Component />
     </Layout>
   )
+}
+
+React.propTypes = {
+  layout: PropTypes.elementType.isRequired,
+  component: PropTypes.elementType.isRequired,
 }
 
 export default LayoutWithComponent

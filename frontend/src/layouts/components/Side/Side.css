@@ -33,7 +33,7 @@
 
 .stack {
   overflow-y: scroll;
-  max-height: 85vh; /* 화면 높이의 90% */
+  max-height: 85vh; /* 화면 높이의 85% */
   padding: 0;
   margin-top: 10px; /* 스택 상단 마진 */
   border: 1px solid #dcdcdc; /* 스택 테두리 */
@@ -57,7 +57,8 @@
 }
 
 .stack .row {
-  padding: 10px;
+  padding: 7px;
+  margin-top: 1px;
   list-style: none;
   border-bottom: 1px solid #ddd;
   transition: background-color 0.2s ease; /* 배경색의 부드러운 전환 효과 */

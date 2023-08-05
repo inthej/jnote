@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import './Content.css'
 
 const Container = styled.div`
   flex: 0 0 55%;
@@ -13,14 +13,12 @@ const Container = styled.div`
 `
 
 const Content = (props) => {
-  const { className } = props
-  return (
-    <Container className={className}>
-      <div className="paper" style={{ minHeight: '438.312px' }}>
-        <div className="note" contentEditable={true} spellCheck={false}></div>
-      </div>
-    </Container>
-  )
+  const { className, children } = props
+  return <Container className={className}>{children}</Container>
+}
+
+Content.propTypes = {
+  className: PropTypes.string,
 }
 
 export default Content

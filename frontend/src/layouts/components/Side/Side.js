@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 import './Side.css'
@@ -123,6 +124,10 @@ const Side = (props) => {
       </div>
     </Container>
   )
+}
+
+Side.propTypes = {
+  className: PropTypes.string,
 }
 
 export default Side

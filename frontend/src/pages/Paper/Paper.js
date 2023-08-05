@@ -1,0 +1,40 @@
+import React from 'react'
+import styled from 'styled-components'
+
+// prettier-ignore
+const Container = styled.div`
+  background:
+    linear-gradient(rgba(128, 128, 128, 0.2) 1px, transparent 1px) 0 0 repeat-y, /* 회색 수평선 */
+    linear-gradient(90deg, rgba(255, 0, 0, 0.5) 1px, transparent 1px) 1em 0 repeat-y, /* 빨간색 수직선 */ 
+    #ffffff; /* 종이 색상 흰색 */
+  background-size:
+    100% 1.6em,
+    1em 100%; /* 필요한 경우 크기를 조정합니다 (1.6em과 1em은 선 크기의 예시입니다) */
+  min-height: 777px;
+  border: 1px solid #dcdcdc; /* 테두리 회색 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); /* 3D 효과를 위한 그림자 적용 */
+  padding: 20px; /* 내부 여백 */
+  overflow: auto; /* 내용이 넘치면 스크롤 가능하도록 */
+`
+
+const Note = styled.div`
+  color: rgb(0, 0, 24);
+  min-height: 777px;
+  font-family: Arial, sans-serif; /* 폰트 설정 */
+  line-height: 1.6em; /* 줄 간격 */
+  vertical-align: text-top; /* 텍스트를 줄의 상단에 정렬 */
+  white-space: pre-wrap; /* 내용 줄 바꿈 유지 */
+  padding: 0.8em 1em; /* 배경선의 높이와 전체 줄 높이를 동일하게 하기 위해 상단과 하단의 내부 여백을 조정합니다 */
+  outline: none; /* 선택시 파란색 아웃라인 제거 */
+`
+
+const Paper = () => {
+  return (
+    <Container style={{ minHeight: '438.312px' }}>
+      <Note contentEditable={true} spellCheck={false} />
+    </Container>
+  )
+}
+
+export default Paper
