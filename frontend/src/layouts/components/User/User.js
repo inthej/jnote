@@ -79,7 +79,7 @@ const User = (props) => {
         <ActionButton id="register" style={{ order: order.register }} onClick={handleRegister}>
           {registerText}
         </ActionButton>
-        <SmallText styled={{ order: order.or }}>또는</SmallText>
+        <SmallText style={{ order: order.or }}>또는</SmallText>
         <InputField id="email" type="email" placeholder="Email" style={{ order: order.email }} />
         <InputField id="password" type="password" placeholder="Password" style={{ order: order.password }} />
         <ActionButton id="login" style={{ order: order.login }}>
