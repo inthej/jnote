@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div`
+const AccountContainer = styled.div`
   flex: 0 0 20%;
   background-color: #ffffff; // 배경색을 하얀색으로 수정
   margin: 5px; /* 외부 여백 */
@@ -21,7 +21,7 @@ const SmallText = styled.div`
 `
 
 // 회원가입 및 로그인 버튼
-const ActionButton = styled.button`
+const AccountButton = styled.button`
   height: 50px;
   color: #000;
   border: 1px solid #000;
@@ -49,7 +49,7 @@ const InputField = styled.input`
   }
 `
 
-const User = (props) => {
+const Account = (props) => {
   const { className } = props
   const [order, setOrder] = useState({
     register: 1,
@@ -74,24 +74,24 @@ const User = (props) => {
   }
 
   return (
-    <Container className={className}>
+    <AccountContainer className={className}>
       <AccountWrapper>
-        <ActionButton id="register" style={{ order: order.register }} onClick={handleRegister}>
+        <AccountButton id="register" style={{ order: order.register }} onClick={handleRegister}>
           {registerText}
-        </ActionButton>
+        </AccountButton>
         <SmallText style={{ order: order.or }}>또는</SmallText>
         <InputField id="email" type="email" placeholder="Email" style={{ order: order.email }} />
         <InputField id="password" type="password" placeholder="Password" style={{ order: order.password }} />
-        <ActionButton id="login" style={{ order: order.login }}>
+        <AccountButton id="login" style={{ order: order.login }}>
           로그인
-        </ActionButton>
+        </AccountButton>
       </AccountWrapper>
-    </Container>
+    </AccountContainer>
   )
 }
 
-User.propTypes = {
+Account.propTypes = {
   className: PropTypes.string,
 }
 
-export default User
+export default Account

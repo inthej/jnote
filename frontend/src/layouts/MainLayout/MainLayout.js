@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
-import Side from '../components/Side'
+import Sidebar from '../components/Sidebar'
 import Content from '../components/Content'
-import User from '../components/User'
+import Account from '../components/Account'
 
 const Container = styled.div`
   height: 100vh;
@@ -19,9 +19,9 @@ const MainLayout = (props) => {
   const { children } = props
   return (
     <Container>
-      <Side className="side" />
+      <Sidebar className="side" />
       <Content className="content">{children}</Content>
-      <User className="user" />
+      <Account className="user" />
     </Container>
   )
 }

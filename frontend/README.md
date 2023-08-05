@@ -8,4 +8,5 @@ $ yarn add --dev --exact prettier
 $ yarn add styled-components styled-reset
 $ yarn add react-helmet
 $ yarn add prop-types
+$ yarn add react-icons
 ```

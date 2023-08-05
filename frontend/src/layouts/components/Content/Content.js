@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div`
+const ContentContainer = styled.div`
   flex: 0 0 55%;
   max-width: 50%;
   margin: 5px; /* 외부 여백 */
@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const Content = (props) => {
   const { className, children } = props
-  return <Container className={className}>{children}</Container>
+  return <ContentContainer className={className}>{children}</ContentContainer>
 }
 
 Content.propTypes = {
