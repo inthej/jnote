@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import { FaPlus, FaRegEnvelope, FaRegTrashAlt, FaSearch } from 'react-icons/fa'
 import styled from 'styled-components'
@@ -10,7 +11,7 @@ const ButtonContainer = styled.div`
   gap: 10px;
 `
 
-const NavigationButton = styled.button`
+export const NavigationButton = styled.button`
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #dcdcdc;
@@ -41,6 +42,11 @@ const SideNavigationButtons = (props) => {
       </NavigationButton>
     </ButtonContainer>
   )
+}
+
+SideNavigationButtons.propTypes = {
+  className: PropTypes.string,
+  onSearchClick: PropTypes.func,
 }
 
 export default SideNavigationButtons
